@@ -19,11 +19,13 @@ jobs:
         java-version: '21'
         distribution: 'temurin'
         
-    - name: Setup and Run Gradle
+    - name: Setup Gradle
       uses: gradle/actions/setup-gradle@v4
       with:
-        gradle-version: 8.8
-        arguments: build
+        gradle-version: '8.8'
+
+    - name: Build with Gradle
+      run: gradle build
 
     - name: Upload Jar Artifact
       uses: actions/upload-artifact@v4
