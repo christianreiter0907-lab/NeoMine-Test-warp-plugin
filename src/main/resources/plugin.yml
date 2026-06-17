@@ -1,0 +1,15 @@
+name: NeoWarp
+version: 1.0
+main: de.neomine.warp.NeoWarp
+api-version: '1.21'
+commands:
+  setwarp:
+    permission: warptest.setwarp
+  warp:
+    permission: warptest.warp
+  delwarp:
+    permission: warptest.delwarp
+  warpgui:
+    permission: warptest.warp
+  warplist:
+    permission: warptest.warp
